@@ -24,5 +24,5 @@ OR
 
 After running the above command, the html page can he opened [here](http://127.0.0.1:8000/).
 
-The Cytoscape.js [extension file] (https://github.com/iVis-at-Bilkent/cytoscape.js-c-tsm/blob/main/communication/static/cytoscape-chola.js) is generated from [cytoscape-chola.js](https://github.com/iVis-at-Bilkent/cytoscape.js-chola) repository.
+The Cytoscape.js extension [file] (https://github.com/iVis-at-Bilkent/cytoscape.js-c-tsm/blob/main/communication/static/cytoscape-chola.js) is generated from [cytoscape-chola.js](https://github.com/iVis-at-Bilkent/cytoscape.js-chola) repository.
 
