@@ -26,3 +26,9 @@ After running the above command, the html page can he opened [here](http://127.0
 
 The Cytoscape.js extension [file] (https://github.com/iVis-at-Bilkent/cytoscape.js-c-tsm/blob/main/communication/static/cytoscape-chola.js) is generated from [cytoscape-chola.js](https://github.com/iVis-at-Bilkent/cytoscape.js-chola) repository.
 
+## Limitations
+* Can cause overlaps of non-child nodes with compound node
+* Can cause node-edge overlaps if a node connected to compound node ends up inside that compound's boundary
+
+## Future Work
+* Extra compaction steps to remove extra spaces caused by compound cropping
