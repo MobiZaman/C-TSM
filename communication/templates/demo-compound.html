@@ -1,0 +1,108 @@
+{% load static %}
+
+<!DOCTYPE>
+<html>
+  <head>
+    <title>cytoscape-c-tsm.js demo (compound)</title>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+
+    <script src="{% static 'layout-base.js' %}"></script>
+    <script src="https://raw.githack.com/iVis-at-Bilkent/cose-base/constraint-support/cose-base.js"></script>
+    <!-- <script src="cose-base.js"></script> -->
+    <script src="https://unpkg.com/cytoscape-cose-bilkent/cytoscape-cose-bilkent.js"></script>
+    <script src="{% static 'demoControl.js' %}" defer></script>
+    <meta charset="UTF-8" />
+    <script src="{% static 'cytoscape-c-tsm.js' %}"></script>
+    <script src="https://raw.githack.com/iVis-at-Bilkent/cytoscape.js-layvo/unstable/cytoscape-layvo.js"></script>
+    
+    <meta charset="UTF-8" />
+
+    <style>
+      body {
+        font-family: helvetica;
+        font-size: 14px;
+      }
+      #cyCose {
+        height: 90%;
+        width: 50%;
+        position: absolute;
+        left: 0;
+        top: 10%;
+        background-color: #FAEDEF;
+        font-size: 10px;
+        font-weight: bold;
+      }
+      #cy {
+        height: 90%;
+        width: 50%;
+        position: absolute;
+        left: 50%;
+        top: 10%;
+        right: 0%;
+        background-color: #FFFFFF;
+        border-top: 1px solid #ccc;
+        font-size: 10px;
+        font-weight: bold;
+      }
+      h1 {
+        opacity: 0.5;
+        font-size: 1em;
+      }
+      button {
+        margin-right: 10px;
+      }
+    </style>
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        function getKey(e)
+        {
+          if (e.keyCode == 46)
+          {
+            cy.remove(cy.$(":selected"));
+          }
+        }
+        document.onkeyup = getKey;
+      });
+    </script>
+  </head>
+
+  <body>
+    <h1>cytoscape-c-tsm-bilkent demo (compound)</h1>
+    <button id="importGraphML" type="button" class="btn-dark btn-sm py-0" onclick="document.getElementById('importGraphML-input').click();">Load Graph</button>
+    <input id="importGraphML-input" type="file" name="name" style="display: none;" /> 
+    
+    <button id = "randomize" type = "button"> Randomize </button>
+    <button id = "cose" type = "button"> COSE </button>
+    <button id = "circle" type = "button"> Grid </button>
+    <button id = "ctsmLayoutButton" type = "button"> C-TSM </button>
+    <span id = "fileName"> </span> 
+    <input type="checkbox" id="compactOption" name="compactOption" checked>
+    <label for="compactOption"> Compact Graph </label><br>
+
+    <br>
+
+    <table style="width:100%">
+        <tr>
+          <td>Evaluation:</td>
+          <td>Time:</td>
+          <td><span id="layoutTime"></span></td>
+          <td>Node Overlap:</td>
+          <td><span id="numberOfNodeOverlaps"></span></td>
+          <td>Edge Crosses:</td>
+          <td><span id="numberOfEdgeCrosses"></span></td> 
+          <td>Avg. Edge Length:</td>
+          <td><span id="averageEdgeLength"></span></td>
+          <td>Total Area:</td>
+          <td><span id="totalArea"></span></td>           
+        </tr>
+      </table>      
+
+    <div id="cy"> Final Orthogonal Layout </div>
+
+    <div id = "cyCose" > CoSE </div>
+
+
+  </body>
+</html>
