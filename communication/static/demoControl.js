@@ -223,6 +223,15 @@ document.getElementById("cose").addEventListener("click", function()
 
     layout2.run();
 
+    // var layout2 = cy.layout({
+    //   name: 'cose-bilkent',
+    //   animate: true,
+    //   animationDuration: 1000,
+    //   animationEasing: 'ease-out'
+    // });
+
+    // layout2.run();
+
     let end = performance.now();
 });
 
