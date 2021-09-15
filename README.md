@@ -15,7 +15,7 @@ Orthogonal layout extension for compound graphs for Cytoscape.js ([demo](https:/
 
 
 ## Usage instructions
-After downloading or cloning the project, install the necessary packages in a virtual environment.
+After downloading or cloning the project, install the necessary packages.
 Then go into the folder containing manage.py and run the following command:
 
 `python manage.py runserver`
