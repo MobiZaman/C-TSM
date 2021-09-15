@@ -14,7 +14,8 @@ Orthogonal layout extension for compound graphs for Cytoscape.js ([demo](https:/
 
 
 ## Usage instructions
-After downloading or cloning the project, go into the folder containing manage.py and run the following command:
+After downloading or cloning the project, install the necessary packages in a virtual environment.
+Then go into the folder containing manage.py and run the following command:
 
 `python manage.py runserver`
 
@@ -24,7 +25,7 @@ OR
 
 After running the above command, the html page can he opened [here](http://127.0.0.1:8000/).
 
-The Cytoscape.js extension [file] (https://github.com/iVis-at-Bilkent/cytoscape.js-c-tsm/blob/main/communication/static/cytoscape-chola.js) is generated from [cytoscape-chola.js](https://github.com/iVis-at-Bilkent/cytoscape.js-chola) repository.
+The Cytoscape.js extension [file] (https://github.com/iVis-at-Bilkent/cytoscape.js-c-tsm/blob/main/communication/static/cytoscape-chola.js) is taken from the c-tsm folder.
 
 ## Limitations
 * Can cause overlaps of non-child nodes with compound node
