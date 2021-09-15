@@ -11,6 +11,7 @@ Orthogonal layout extension for compound graphs for Cytoscape.js ([demo](https:/
  * Django ^3.2.6
  * networkx ^2.6.2
  * PuLP ^2.5.0
+ * Matplotlib
 
 
 ## Usage instructions
