@@ -1,0 +1,4 @@
+django
+pulp
+matplotlib
+networkx
